@@ -9,7 +9,6 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -339,7 +338,8 @@ h1 {
   box-shadow: 4px 4px 2px lightgray;
   margin: 1rem 1rem;
   height: 7rem;
-  animation-name: appear 3s;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu_carte {
@@ -394,7 +394,7 @@ h1 {
   height: 50px;
   border-radius: 45px;
   font-size: 16px;
-  background: linear-gradient(193.33deg, #b560dd -11.44%, #ee41e0 123.93%);
+  background: linear-gradient(193.33deg, #ff79da -11.44%, #9356dc 123.93%);
   color: white;
   box-shadow: 4px 4px 2px lightgrey;
 }

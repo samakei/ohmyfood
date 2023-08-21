@@ -1,0 +1,41 @@
+/*animations css*/
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: appear 200ms 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.loader::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-right: 5px solid grey;
+  border-top: 5px solid rgb(209, 8, 235);
+  border-left: 2px solid rgb(235, 14, 136);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(1);
+  }
+}/*# sourceMappingURL=maggie.css.map */
