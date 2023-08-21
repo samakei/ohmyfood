@@ -8,30 +8,34 @@ body {
 }
 header {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 h1 a {
+ 
   display: flex;
   color: black;
-  justify-content: flex-start;
-  margin: 0 1rem;
-  flex-grow: 1;
 
+ 
 }
 h1 {
   height: 25px;
 }
 .bouton-retour {
-  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 1rem;
 
 }
-
+.logo-resto{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 .logo {
   display: flex;
   width: 100%;
@@ -72,9 +76,6 @@ h1 {
   margin: 0rem 4rem;
 }
 
-.bouton:hover {
-  color: aliceblue;
-}
 .titre {
   text-align: center;
   margin: 2rem;
@@ -184,6 +185,11 @@ h1 {
 .color-texte {
   width: 100%;
 }
+.card-text {
+  display: flex;
+  width: 100%;
+  flex-grow: 0;
+}
 
 .card-text {
   flex-grow: 2;
@@ -191,27 +197,44 @@ h1 {
 }
 .fa-stack-1x {
   line-height: inherit;
-}
-.fa-stack-1x {
-  display: flex;
   color: #353535;
 }
 
+.card-text .fas{
+  color: transparent;
+  transition: all 350ms;
+  padding: 0px;
+  
+} .name-resto .fas{
+  color: transparent;
+  transition: all 350ms;
+  padding: 0px;
+}
+
+.heart .fas:hover{
+background: linear-gradient(to bottom left, #9356dc, #ff79da);
+font-size: large;
+transform: scale(2);
+background-clip: text;
+-webkit-background-clip: text;
+    
+}
+.resto-heart .fas:hover{
+background: linear-gradient(to bottom left, #9356dc, #ff79da);
+font-size: large;
+transform: scale(2);
+background-clip: text;
+-webkit-background-clip: text;
+
+}
 .fa-heart {
   width: 100%;
   flex-grow: 1;
 }
-.heart .fas {
-  color: #a92ee2;
-}
 .heart .fa-stack-2x {
   font-size: 25px;
 }
-.card-text {
-  display: flex;
-  width: 100%;
-  flex-grow: 0;
-}
+
 .section-restaurant {
   display: flex;
   align-items: center;
@@ -237,11 +260,7 @@ h1 {
   padding: 1.5rem;
 
 }
-.name-resto h3{
-  display: flex;
-  margin: 1rem 0.5rem;
-  
-}
+
 .resto-heart {
   display: flex;
   font-size: 25px;
@@ -250,17 +269,10 @@ h1 {
   position: relative;
 }
 .name-resto h3 {
-  font-size: 28px;
-   font-family: shrikhand, cursive;
+  font-size: 1.6rem;
   font-family: 'Shrikhand', cursive;
-  
-}
-
-.entre-card {
   display: flex;
-  position: relative;
-  flex-wrap: nowrap;
-  
+  margin: 0rem 0.5rem;
 }
 
 .menu_carte {
@@ -290,16 +302,22 @@ padding: 0 3.5rem 1.5rem;
 .entre-card{
   display: flex;
   align-items: center;
-  height: 77px;
   border-radius: 20px 20px;
   background-color: white;
   box-shadow: 4px 4px 2px lightgray;
-  margin: 1rem;
+  margin: 1rem  1rem;
+  height: 7rem;
+ animation-name: appear 3s;
+ 
 }
+
 .menu_carte {
   width: 100%;
-  margin: 1rem;
+  padding: 0 1rem;
+  
+  
 }
+
 .etr {
   margin: 1rem;
   font-size: 20px;
@@ -313,9 +331,7 @@ padding: 0 3.5rem 1.5rem;
 .etr h5{
   margin-bottom: 5px;
 }
-.entre-card h6 {
-  font-size: 16px;
-}
+
 .price {
   padding: 1rem;
 }
@@ -324,18 +340,16 @@ padding: 0 3.5rem 1.5rem;
   align-items: center;
   position: relative;
   color: white;
+  font-size: 25px;
 }
-.card-icon:hover{
- width: 100%;
- cursor: pointer;
+
+.entre-card:hover .card-icon{
+  background-color: #99e2d0;
+  width: 70px;
  align-items: center;
  justify-content: center;
  border-radius: 0px 20px 20px 0px;
- background-color: #99e2d0;
- transition: all 500ms ease;
- width: 70px;
- height: 77px;
-
+ align-self: stretch;
 }
 
 .button {
