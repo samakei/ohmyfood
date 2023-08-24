@@ -14,6 +14,7 @@ header {
 h1 a {
   display: flex;
   color: black;
+  margin: 0.5rem;
 }
 h1 {
   height: 25px;
@@ -24,9 +25,8 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 1rem;
-
 }
-.logo-resto{
+.logo-resto {
   display: flex;
   width: 100%;
   align-items: center;
@@ -61,17 +61,25 @@ h1 {
 }
 .bouton {
   border: none;
-  width: 218px;
-  height: 50px;
-  border-radius: 45px;
-  font-size: 16px;
-  background: linear-gradient(193.33deg, #a92ee2 -11.44%, #ff79da 123.93%);
-  color: white;
-  box-shadow: 4px 4px 2px lightgrey;
-  transition: all 200ms ease;
-  margin: 0rem 4rem;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
-
+.bouton:hover {
+  background-color: #fff;
+  box-shadow: 0.27rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
 .titre {
   text-align: center;
   margin: 2rem;
@@ -196,55 +204,50 @@ h1 {
   color: #353535;
 }
 
-.card-text .fas{
+.card-text .fas {
   color: transparent;
   transition: all 350ms;
   padding: 0px;
-  
-} .name-resto .fas{
+}
+.name-resto .fas {
   color: transparent;
   transition: all 350ms;
   padding: 0px;
 }
 
-.heart .fas:hover{
-background: linear-gradient(to bottom left, #9356dc, #ff79da);
-font-size: large;
-transform: scale(2);
-background-clip: text;
--webkit-background-clip: text;
-    
+.heart .fas:hover {
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.resto-heart .fas:hover{
-background: linear-gradient(to bottom left, #9356dc, #ff79da);
-font-size: large;
-transform: scale(2);
-background-clip: text;
--webkit-background-clip: text;
 
+.resto-heart .fas:hover {
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .fa-heart {
   width: 100%;
   flex-grow: 1;
 }
 .heart .fa-stack-2x {
-  font-size: 25px;
+  font-size: larger;
 }
 
 .section-restaurant {
   display: flex;
   align-items: center;
 }
-/*photo_couverture_restaurant*/
+/*photo_couverture_restaurant et card de resto*/
 .photo_couverture img {
   width: 100%;
   object-fit: cover;
   height: 300px;
 }
-.section-menu_restaurant{
+.section-menu_restaurant {
   transform: translateY(-80px);
   background-color: #eaeaea;
-   border-top-left-radius: 40px 40px;
+  border-top-left-radius: 40px 40px;
   border-top-right-radius: 40px 40px;
 }
 .name-resto {
@@ -254,7 +257,6 @@ background-clip: text;
   border-top-right-radius: 40px 40px;
   flex-direction: row;
   padding: 1.5rem;
-
 }
 
 .resto-heart {
@@ -266,14 +268,11 @@ background-clip: text;
 }
 .name-resto h3 {
   font-size: 1.6rem;
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   display: flex;
   margin: 0rem 0.5rem;
 }
 
-.menu_carte {
-  flex-grow: 1;
-}
 .section-menu_restaurant {
   position: relative;
   background-color: #f6f6f6;
@@ -283,84 +282,76 @@ background-clip: text;
   align-items: center;
   position: relative;
   flex-direction: column;
-  
+  overflow: hidden;
 }
 .name-resto {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  
-  
 }
 .resto-heart {
-padding: 0 3.5rem 1.5rem;
+  padding: 0 3.5rem 1.5rem;
 }
-.entre-card{
+.entre-card {
   display: flex;
   align-items: center;
+  overflow: hidden;
   border-radius: 20px 20px;
   background-color: white;
   box-shadow: 4px 4px 2px lightgray;
-  margin: 1rem  1rem;
-  height: 7rem;
-  overflow: hidden;
-  white-space: nowrap;
-  
+  margin: 1rem;
+  height: 77px;
 }
 
 .menu_carte {
   width: 100%;
+  overflow: hidden;
   padding: 0 1rem;
- 
 }
-
+.entre-card h4 {
+  font-size: larger;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.entre-card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 1px;
+}
 .etr {
   margin: 1rem;
   font-size: 20px;
 }
-.etr::after{
- display: block;
+.etr::after {
+  display: block;
   content: "";
   width: 45px;
   border-bottom: 4px solid #99e2d0;
 }
-.etr h5{
+.etr h5 {
   margin-bottom: 5px;
 }
 
-.price {
-  padding: 1rem;
-}
 .card-icon {
   display: flex;
   align-items: center;
-  position: relative;
   color: white;
-  font-size: 25px;
+  font-size: xx-large;
+  white-space: nowrap;
 }
 
-.entre-card:hover .card-icon{
+.entre-card:hover .card-icon {
   background-color: #99e2d0;
   width: 70px;
- align-items: center;
- justify-content: center;
- border-radius: 0px 20px 20px 0px;
- align-self: stretch;
-}
-
-.button {
-  display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 0;
-  border: none;
-  width: 186px;
-  height: 50px;
-  border-radius: 45px;
-  font-size: 16px;
- background: linear-gradient(193.33deg, #ff79da -11.44%, #9356dc 123.93%);
-  color: white;
-  box-shadow: 4px 4px 2px lightgrey;
+  border-radius: 0px 20px 20px 0px;
+  align-self: stretch;
+  transition-duration: 0.5s;
 }
 
 .bouton-commande {
@@ -376,7 +367,7 @@ padding: 0 3.5rem 1.5rem;
 
 /*format ordinateur de bureux*/
 @media screen and (min-width: 1024px) {
-   .photo_couverture img {
+  .photo_couverture img {
     width: 100%;
     object-fit: cover;
     height: 680px;
@@ -429,22 +420,22 @@ padding: 0 3.5rem 1.5rem;
     gap: 28px;
     margin: 0 auto;
   }
-  .section-menu_restaurant{
+  .section-menu_restaurant {
     max-width: 1080px;
     margin: 0 auto;
   }
-  .photo_couverture{
+  .photo_couverture {
     max-width: 1080;
     margin: 0 auto;
   }
-  .name-resto{
+  .name-resto {
     max-width: 10180;
     margin: 0 auto;
   }
   .section-resto_title {
     font-size: 14px;
   }
-  .name-resto{
+  .name-resto {
     align-items: center;
     justify-content: center;
   }
@@ -493,7 +484,6 @@ padding: 0 3.5rem 1.5rem;
   .resto-card .card {
     width: 93%;
     height: 250px;
-
   }
 }
 .footer {

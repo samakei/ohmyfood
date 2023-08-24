@@ -14,3 +14,12 @@
    transform: translateY(0);
 }
 }
+
+@keyframes appeare{
+0%{
+    transform: translate(0);
+}
+100%{
+    transform: translate(1);
+}
+}

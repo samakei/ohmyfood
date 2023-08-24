@@ -1,5 +1,4 @@
-/*animations css*/
-
+/*animations-css page d'acccuell*/
 .loader{
     $animation-duration: 1s;
     position: fixed;
@@ -13,8 +12,6 @@
     animation: appear 200ms $animation-duration;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-   
-    
     &::after{
     content: "";
     width: 100px;
@@ -24,10 +21,18 @@
     border-left: 2px solid rgb(235, 14, 136);
     border-radius: 50%;
    animation:  spin $animation-duration infinite linear;
-   
-    }
+   }
 }
 
+@keyframes spin {
+0%{
+    transform: rotate(0deg);
+    
+}
+100%{
+    transform: rotate(360deg);
+}
+}
 @keyframes appear {
 0%{
     transform: scale(1);
@@ -36,13 +41,48 @@
     transform: scale(0);
 }
 }
+/*animation-css page de carte des restaurants*/
+.entre-card{
+ animation: card-animation 6s;
+ animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+ animation-fill-mode: both;
+}
+.delay-0{
+animation-delay: 0s;
+}
+.delay-1{
+animation-delay: 1s;
+}
+.delay-2{
+    animation-delay: 2s;
+}
+.delay-3{
+    animation-delay: 3s;
+}
+.delay-4{
+    animation-delay: 4s;
+}
+.delay-5{
+    animation-delay: 5s;
+}
+.delay-6{
+    animation-delay: 6s;
+}
+.delay-7{
+    animation-delay: 7s;
+}
+.delay-8{
+    animation-delay: 8s;
+}
+.delay-9{
+    animation-delay: 9s;
+}
 
-@keyframes spin{
+ @keyframes card-animation{
 0%{
-    transform: rotate(360deg);
+ transform: scale(0);
 }
 100%{
-    transform: rotate(1);
+  transform: scale(1);
 }
-}
-  
+ } 
