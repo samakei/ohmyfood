@@ -12,14 +12,16 @@ header {
   justify-content: center;
 }
 
-h1 a {
+header a {
   display: flex;
   color: black;
   margin: 0.5rem;
+  font-size: 35px;
 }
 
-h1 {
-  height: 25px;
+.haute-site {
+  margin: 0;
+  height: 65px;
 }
 
 .bouton-retour {
@@ -470,11 +472,11 @@ h1 {
     margin: 0 auto;
   }
   .photo_couverture {
-    max-width: 1080;
+    width: auto;
     margin: 0 auto;
   }
   .name-resto {
-    max-width: 10180;
+    max-width: 1080px;
     margin: 0 auto;
   }
   .section-resto_title {
