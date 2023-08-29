@@ -344,16 +344,24 @@ header a {
   color: white;
   font-size: xx-large;
   white-space: nowrap;
+  position: absolute;
+  opacity: 0;
 }
 
 .entre-card:hover .card-icon {
   background-color: #99e2d0;
-  width: 70px;
+  width: 100px;
   align-items: center;
   justify-content: center;
   border-radius: 0px 20px 20px 0px;
   align-self: stretch;
   transition-duration: 0.5s;
+  position: static;
+  opacity: 1;
+}
+.price{
+  font-weight: bold;
+  margin-right: 1rem;
 }
 
 .bouton-commande {

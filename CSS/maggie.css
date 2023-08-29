@@ -46,44 +46,55 @@
   animation-fill-mode: both;
 }
 
+/** Important */
 .delay-0 {
   animation-delay: 0s;
+  animation-duration: 1s;
 }
 
 .delay-1 {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
 }
 
 .delay-2 {
-  animation-delay: 2s;
+  animation-delay: 1s;
+  animation-duration: 1s;
 }
 
 .delay-3 {
-  animation-delay: 3s;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
 }
 
 .delay-4 {
-  animation-delay: 4s;
+  animation-delay: 2s;
+  animation-duration: 1s;
 }
 
 .delay-5 {
-  animation-delay: 5s;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
 }
 
 .delay-6 {
-  animation-delay: 6s;
+  animation-delay: 3s;
+  animation-duration: 1s;
 }
 
 .delay-7 {
-  animation-delay: 7s;
+  animation-delay: 3.5s;
+  animation-duration: 1s;
 }
 
 .delay-8 {
-  animation-delay: 8s;
+  animation-delay: 4s;
+  animation-duration: 1s;
 }
 
 .delay-9 {
-  animation-delay: 9s;
+  animation-delay: 4.5s;
+  animation-duration: 1s;
 }
 
 @keyframes card-animation {
