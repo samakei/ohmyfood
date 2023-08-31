@@ -19,26 +19,6 @@ header a {
   font-size: 35px;
 }
 
-.haute-site {
-  margin: 0;
-  height: 65px;
-}
-
-.bouton-retour {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
-}
-
-.logo-resto {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo {
   display: flex;
   width: 100%;
@@ -47,10 +27,6 @@ header a {
   justify-content: center;
   box-shadow: 0px 5px 5px lightgrey;
   margin-bottom: 5px;
-}
-
-.section-restaurant {
-  display: flex;
 }
 
 .localisation {
@@ -238,12 +214,6 @@ header a {
   padding: 0px;
 }
 
-.name-resto .fas {
-  color: transparent;
-  transition: all 350ms;
-  padding: 0px;
-}
-
 .heart .fas:hover {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
   background-clip: text;
@@ -265,12 +235,27 @@ header a {
   font-size: larger;
 }
 
-.section-restaurant {
-  display: flex;
-  align-items: center;
+/*photo_couverture_restaurant et card de resto*/
+.haute-site {
+  margin: 0;
+  height: 65px;
 }
 
-/*photo_couverture_restaurant et card de resto*/
+.bouton-retour {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.logo-resto {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .photo_couverture img {
   width: 100%;
   -o-object-fit: cover;
@@ -283,6 +268,12 @@ header a {
   background-color: #eaeaea;
   border-top-left-radius: 40px 40px;
   border-top-right-radius: 40px 40px;
+}
+
+.name-resto .fas {
+  color: transparent;
+  transition: all 350ms;
+  padding: 0px;
 }
 
 .name-resto {
