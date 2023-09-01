@@ -193,15 +193,15 @@ header a {
 }
 
 .heart .fas:hover {
- background: linear-gradient(to bottom left, #9356dc, #ff79da);
- background-clip: text;
+background: linear-gradient(to bottom left, #9356dc, #ff79da);
 -webkit-background-clip: text;
+background-clip: text;
 }
 
 .resto-heart .fas:hover {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 .fa-heart {
   width: 100%;
@@ -489,6 +489,7 @@ header a {
     height: 250px;
   }
 }
+/*pied-de_site*/
 .footer {
   width: 100%;
   background-color: #353535;
