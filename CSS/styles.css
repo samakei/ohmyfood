@@ -379,17 +379,21 @@ header a {
   font-size: xx-large;
   white-space: nowrap;
   position: absolute;
-  opacity: 0;
-}
-
-.entre-card:hover .card-icon {
+  right: 0;
+  height: 100%;
+  opacity: 1;
   background-color: #99e2d0;
   width: 100px;
   align-items: center;
   justify-content: center;
   border-radius: 0px 20px 20px 0px;
   align-self: stretch;
+  transform: translateX(100%);
+}
+
+.entre-card:hover .card-icon {
   transition-duration: 0.5s;
+  transform: translateX(0);
   position: static;
   opacity: 1;
 }

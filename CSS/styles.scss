@@ -193,9 +193,9 @@ header a {
 }
 
 .heart .fas:hover {
-background: linear-gradient(to bottom left, #9356dc, #ff79da);
--webkit-background-clip: text;
-background-clip: text;
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .resto-heart .fas:hover {
@@ -212,9 +212,9 @@ background-clip: text;
 }
 
 /*photo_couverture_section-menu-resto et card de restaurants*/
-.haute-site{
- margin: 0;
- height: 65px;
+.haute-site {
+  margin: 0;
+  height: 65px;
 }
 .bouton-retour {
   display: flex;
@@ -338,21 +338,25 @@ background-clip: text;
   font-size: xx-large;
   white-space: nowrap;
   position: absolute;
-  opacity: 0;
-}
-
-.entre-card:hover .card-icon {
+  right: 0;
+  height: 100%;
+  opacity: 1;
   background-color: #99e2d0;
   width: 100px;
   align-items: center;
   justify-content: center;
   border-radius: 0px 20px 20px 0px;
   align-self: stretch;
+  transform: translateX(100%);
+}
+
+.entre-card:hover .card-icon {
   transition-duration: 0.5s;
+  transform: translateX(0);
   position: static;
   opacity: 1;
 }
-.price{
+.price {
   font-weight: bold;
   margin-right: 1rem;
 }
@@ -432,7 +436,7 @@ background-clip: text;
     margin: 0 auto;
   }
   .name-resto {
-   max-width: 1080px;
+    max-width: 1080px;
     margin: 0 auto;
   }
   .section-resto_title {
